@@ -1,4 +1,3 @@
-// Texte animé lettre par lettre
 const text = "Je t'aime Kend❤️";
 const animatedText = document.getElementById("animatedText");
 
@@ -12,7 +11,6 @@ function typeText() {
 }
 typeText();
 
-// Animation des cœurs
 function createHeart() {
   const heart = document.createElement("div");
   heart.classList.add("heart");
@@ -28,8 +26,14 @@ function createHeart() {
 }
 setInterval(createHeart, 300);
 
-// Effet "bisou"
 function showKiss() {
   const kiss = document.getElementById("kiss");
   kiss.classList.remove("hidden");
+}
+
+function repondre() {
+  const reponse = prompt("Écris-moi ta réponse ici 💌:");
+  if (reponse) {
+    alert("Merci pour ta réponse ❤️ :\n" + reponse);
+  }
 }
